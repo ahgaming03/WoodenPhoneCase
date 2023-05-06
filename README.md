@@ -7,8 +7,8 @@ How to use this file
 4. Finish
 
 - DATABASE
-- Import file .sql to localhost/phpmyadmin
-- Just import and not do anything 
++ Import file .sql to localhost/phpmyadmin
++ Just import and not do anything 
 
 
 # Have a good day bro :)
