@@ -1,0 +1,17 @@
+:root {
+    --card-height: 100%;
+}
+
+.card {
+    height: var(--card-height);
+}
+
+.card:hover {
+    border-width: 10px;
+}
+
+
+.card-box {
+    margin-left: 10%;
+    margin-right: 10%;
+}

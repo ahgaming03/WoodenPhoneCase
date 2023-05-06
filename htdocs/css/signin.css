@@ -1,0 +1,30 @@
+body {
+    background-size: auto;
+    background-image: url("/img/forest_biome.jpg");
+    align-items: center;
+    background-repeat:   no-repeat;
+    background-position: center center; 
+}
+
+h1 {
+    font-family: "Minecraft-Bold";
+}
+
+
+
+.login-box {
+    border: 0px solid #ccc;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 3%;
+    justify-content: center;
+    display: block;
+    background-color: rgb(161, 161, 161);
+    background-image: url("/img/Oak_Plank.png");
+    background-size: 10%;
+    object-fit: scale-down;
+
+}
+

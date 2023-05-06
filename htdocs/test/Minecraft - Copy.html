@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <div class="col-xl-4 col-lg-5 col-md-7 col-sm-10" sf-type="container" sf-label="Column">
+    <h1 sf-type="text" sf-label="Heading" class="mb-6 aos-init aos-animate" sf-anim-delay="0" data-aos="fade-down" data-aos-delay="0">
+          Sign In
+    </h1>
+    <form action="form-handler.php" method="post" enctype="multipart/form-data" sf-type="form" sf-label="Form" class="js-ajax-form">
+      <!-- forms alerts -->
+        <div class="alert alert-action-8 fixed-top invisible fade js-form-result" data-result="success" role="alert" sf-type="container" sf-label="Submit result - success">
+          <span class="js-form-alert-text" data-default-text="Thanks for your message!" sf-type="text" sf-label="Text">
+            Thanks for your message!
+          </span>
+        </div>
+        <div class="alert alert-action-5 fixed-top invisible fade js-form-result" data-result="error" role="alert" sf-type="container" sf-label="Submit result - error">
+          <span class="js-form-alert-text" sf-type="text" sf-label="Text">
+            Error!
+          </span>
+        </div>
+        <!-- forms alerts end -->
+          <div sf-type="container" sf-label="Input group" class="input-group mb-6 aos-init aos-animate" sf-anim-delay="0.5" data-aos="fade-down" data-aos-delay="150">
+            <div sf-type="container" sf-label="Input icon" class="input-group-text border-end-0 border-dark-3 ps-4 pe-2">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-3" sf-label="SVG icon" sf-type="svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5002 3.75H2.5002C2.16868 3.75 1.85074 3.8817 1.61632 4.11612C1.3819 4.35054 1.2502 4.66848 1.2502 5V5.27104L10.0002 10.5213L18.7502 5.27098V5C18.7502 4.66848 18.6185 4.35054 18.3841 4.11612C18.1497 3.8817 17.8317 3.75 17.5002 3.75ZM0.000203451 5.64224C-6.77314e-05 5.63161 -6.79025e-05 5.62098 0.000203451 5.61034V5C0.000203451 4.33696 0.263596 3.70107 0.732437 3.23223C1.20128 2.76339 1.83716 2.5 2.5002 2.5H17.5002C18.1632 2.5 18.7991 2.76339 19.268 3.23223C19.7368 3.70107 20.0002 4.33696 20.0002 5V5.61604V5.63397V15C20.0002 15.663 19.7368 16.2989 19.268 16.7678C18.7991 17.2366 18.1632 17.5 17.5002 17.5H2.5002C1.83716 17.5 1.20128 17.2366 0.732437 16.7678C0.263596 16.2989 0.000203451 15.663 0.000203451 15V5.64224ZM18.7502 13.9117V6.72895L12.6801 10.3708L18.7502 13.9117ZM18.7051 15.3329L11.5602 11.165L11.4569 11.1048L10.0002 11.9788L8.54329 11.1049L8.44016 11.165L1.29533 15.3328C1.35239 15.5394 1.46213 15.7297 1.61632 15.8839C1.85074 16.1183 2.16868 16.25 2.5002 16.25H17.5002C17.8317 16.25 18.1497 16.1183 18.3841 15.8839C18.5383 15.7297 18.648 15.5394 18.7051 15.3329ZM1.2502 13.9117V6.73013L7.31989 10.371L1.2502 13.9117Z">
+                </path>
+              </svg>
+            </div>
+            <input type="email" name="email" placeholder="Email address" class="form-control border-start-0 border-dark-3 ps-1" sf-type="input" sf-label="Input" required="required">																						
+          </div>
+          <div sf-type="container" sf-label="Input group" class="input-group mb-6 aos-init aos-animate" sf-anim-delay="1" data-aos="fade-down" data-aos-delay="250">
+            <div sf-type="container" sf-label="Input icon" class="input-group-text border-end-0 border-dark-3 ps-4 pe-2">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-3" sf-label="SVG icon" sf-type="svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.375 10H5.625C5.29348 10 4.97554 10.1317 4.74112 10.3661C4.5067 10.6005 4.375 10.9185 4.375 11.25V17.5C4.375 17.8315 4.5067 18.1495 4.74112 18.3839C4.97554 18.6183 5.29348 18.75 5.625 18.75H14.375C14.7065 18.75 15.0245 18.6183 15.2589 18.3839C15.4933 18.1495 15.625 17.8315 15.625 17.5V11.25C15.625 10.9185 15.4933 10.6005 15.2589 10.3661C15.0245 10.1317 14.7065 10 14.375 10ZM5.625 8.75C4.96196 8.75 4.32607 9.01339 3.85723 9.48223C3.38839 9.95107 3.125 10.587 3.125 11.25V17.5C3.125 18.163 3.38839 18.7989 3.85723 19.2678C4.32607 19.7366 4.96196 20 5.625 20H14.375C15.038 20 15.6739 19.7366 16.1428 19.2678C16.6116 18.7989 16.875 18.163 16.875 17.5V11.25C16.875 10.587 16.6116 9.95107 16.1428 9.48223C15.6739 9.01339 15.038 8.75 14.375 8.75H5.625ZM5.625 5C5.625 3.83968 6.08594 2.72688 6.90641 1.90641C7.72688 1.08594 8.83968 0.625 10 0.625C11.1603 0.625 12.2731 1.08594 13.0936 1.90641C13.9141 2.72688 14.375 3.83968 14.375 5V8.75H13.125V5C13.125 4.1712 12.7958 3.37634 12.2097 2.79029C11.6237 2.20424 10.8288 1.875 10 1.875C9.1712 1.875 8.37634 2.20424 7.79029 2.79029C7.20424 3.37634 6.875 4.1712 6.875 5V8.75H5.625V5Z">
+                </path>
+              </svg>
+            </div>
+            <input type="password" name="password" placeholder="Password" class="form-control border-start-0 border-dark-3 ps-1" sf-type="input" sf-label="Input" required="required">																						
+          </div>
+          <button class="btn btn-action-1 w-100 mb-6 aos-init aos-animate" sf-type="btn" sf-label="Form submit" sf-anim-delay="1.5" data-aos="fade-down" data-aos-delay="400">
+  Sign In
+          </button>
+          <div sf-type="container" sf-label="Container" sf-anim-delay="1" data-aos="fade-down" data-aos-delay="250" class="aos-init aos-animate">
+            <p sf-type="text" sf-label="Paragraph" class="d-inline-block text-dark-3 mb-6">
+  Don’t have an account?
+            </p>
+            <a href="#" sf-type="link" sf-label="Text link" class="ms-1">
+  Log In
+            </a>
+          </div>
+          <div class="w-50 border-bottom border-bg-2 mx-auto mb-6 aos-init aos-animate" sf-type="container" sf-label="Column" sf-anim-delay="1.5" data-aos="fade-down" data-aos-delay="400">
+          </div>
+          <p class="mb-6" sf-type="text" sf-label="Paragraph">
+  Sign In via socials
+          </p>
+          <div class="row g-0" sf-type="container" sf-label="Row">
+            <div class="col-4 pe-2" sf-type="container" sf-label="Column">
+              <a href="#" class="btn btn-bg-2 w-100 h-100 d-flex justify-content-center align-items-center" sf-type="link-container" sf-label="Link-container">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-1" sf-label="SVG icon" sf-type="svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 12.067C0 18.033 4.333 22.994 10 24V15.333H7V12H10V9.333C10 6.333 11.933 4.667 14.667 4.667C15.533 4.667 16.467 4.8 17.333 4.933V8H15.8C14.333 8 14 8.733 14 9.667V12H17.2L16.667 15.333H14V24C19.667 22.994 24 18.034 24 12.067C24 5.43 18.6 0 12 0C5.4 0 0 5.43 0 12.067Z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+            <div class="col-4 px-1" sf-type="container" sf-label="Column">
+              <a href="#" class="btn btn-bg-2 w-100 h-100 d-flex justify-content-center align-items-center" sf-type="link-container" sf-label="Link-container">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-1" sf-label="SVG icon" sf-type="svg">
+                  <path d="M19.4565 8.15425C19.5795 8.81325 19.6465 9.50225 19.6465 10.2213C19.6465 15.8453 15.8825 19.8442 10.1975 19.8442C8.90467 19.8446 7.62442 19.5903 6.42991 19.0957C5.23541 18.6012 4.15006 17.8761 3.23588 16.9619C2.3217 16.0477 1.59661 14.9624 1.10204 13.7679C0.607475 12.5733 0.353122 11.2931 0.353516 10.0003C0.353122 8.70741 0.607475 7.42716 1.10204 6.23265C1.59661 5.03814 2.3217 3.95279 3.23588 3.03861C4.15006 2.12443 5.23541 1.39935 6.42991 0.904778C7.62442 0.41021 8.90467 0.155856 10.1975 0.15625C12.8555 0.15625 15.0765 1.13425 16.7805 2.72225L14.0055 5.49725V5.49025C12.9725 4.50625 11.6615 4.00125 10.1975 4.00125C6.94952 4.00125 4.30952 6.74525 4.30952 9.99425C4.30952 13.2423 6.94952 15.9923 10.1975 15.9923C13.1445 15.9923 15.1505 14.3073 15.5625 11.9933H10.1975V8.15425H19.4575H19.4565Z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+            <div class="col-4 ps-2" sf-type="container" sf-label="Column">
+              <a href="#" class="btn btn-bg-2 w-100 h-100 d-flex justify-content-center align-items-center" sf-type="link-container" sf-label="Link-container">
+                <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-1" sf-label="SVG icon" sf-type="svg">
+                  <path d="M23.6435 2.93757C22.8085 3.30757 21.9115 3.55757 20.9685 3.67057C21.9415 3.08836 22.6694 2.17203 23.0165 1.09257C22.1023 1.63555 21.1018 2.01776 20.0585 2.22257C19.3569 1.47343 18.4276 0.976891 17.4148 0.810039C16.4021 0.643187 15.3626 0.815357 14.4577 1.29982C13.5529 1.78428 12.8333 2.55393 12.4107 3.48927C11.988 4.42461 11.886 5.47332 12.1205 6.47257C10.2682 6.37956 8.45613 5.89811 6.80192 5.05947C5.14772 4.22083 3.68834 3.04373 2.5185 1.60457C2.1185 2.29457 1.8885 3.09457 1.8885 3.94657C1.88805 4.71356 2.07693 5.46881 2.43838 6.1453C2.79982 6.82179 3.32266 7.3986 3.9605 7.82457C3.22078 7.80103 2.49737 7.60115 1.8505 7.24157V7.30156C1.85043 8.37731 2.22253 9.41994 2.90368 10.2526C3.58483 11.0852 4.53307 11.6565 5.5875 11.8696C4.90128 12.0553 4.18184 12.0826 3.4835 11.9496C3.781 12.8752 4.3605 13.6846 5.14087 14.2645C5.92124 14.8444 6.86342 15.1657 7.8355 15.1836C6.18533 16.479 4.14739 17.1817 2.0495 17.1786C1.67788 17.1787 1.30658 17.157 0.9375 17.1136C3.06698 18.4827 5.54584 19.2094 8.0775 19.2066C16.6475 19.2066 21.3325 12.1086 21.3325 5.95257C21.3325 5.75257 21.3275 5.55056 21.3185 5.35056C22.2298 4.69154 23.0164 3.87546 23.6415 2.94057L23.6435 2.93757Z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </form>
+      </div>
+  
+  
+      , initial-scale=1.0"
+
+
+</body>
+</html>

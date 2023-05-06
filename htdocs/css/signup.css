@@ -1,0 +1,28 @@
+body {
+    background-size: cover;
+    background-image: url("/img/Minecraft_Aesthetic.gif");
+    padding: 30px;
+    align-items: center;
+    background-repeat:   no-repeat;
+    background-position: center center; 
+}
+
+h1{
+  font-family: "Minecraft-Bold";
+}
+
+
+
+.signup-box {
+    border: 0px solid #ccc;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    justify-content: center;
+    display: block;
+    background-color: rgb(224, 221, 221);
+    /* background-image: url("/img/Oak_Plank.png"); */
+    background-size: 100% ;
+    border-radius: 10px;
+}
+
