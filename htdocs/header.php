@@ -35,7 +35,7 @@ if (empty($_SESSION["loggedin"])) {
                 </ul>
 
                 <a class="navbar-brand" href="index.php">
-                    <img src="img/wood_log.png" alt="Logo" width="32" height="32"
+                    <img src="img/logo.png" alt="Logo" width="32" height="32"
                         class="d-inline-block align-text-center">
                     Jackarry </a>
             </div>

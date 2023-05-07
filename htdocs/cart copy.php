@@ -68,10 +68,12 @@
                             </p>
                             <div>
                                 <input type="number" id="quantity-<?= $row['id'] ?>" min="1" value="<?= $row['quantity'] ?>"
-                                    width="10px"
-                                    onchange="updateQuantity(<?= $row['id'] ?>, <?= $row['order_id'] ?>, this.value)">
+                                    width="10px" onfocus="showButton('button<?= $row['id'] ?>')">
+                                <button type="button" id="button<?= $row['id'] ?>"
+                                    class="btn btn-warning buttonUpdate">Update</button>
                                 <button type="button" class="btn btn-danger"
                                     onclick="removeProduct(<?= $row['id'] ?>, <?= $row['order_id'] ?>)">Remove</button>
+
                             </div>
                         </div>
                     </div>
@@ -84,7 +86,7 @@
                 <?php
             }
             // Select the column you want to calculate the total of
-            $sql = "SELECT id, total, total_items FROM orders WHERE user_id = $user_id AND status = 0";
+            $sql = "SELECT total FROM orders WHERE user_id = $user_id AND status = 0";
 
             $result = $conn->query($sql);
 
@@ -94,36 +96,11 @@
                 ?>
 
                 <div class="text-end">
-                    <span>Subtotal</span>
-                    <span id="total-items">
-                        <?= "(" . $row['total_items'], ($row['total_items'] > 1) ? " items):" : " item):" ?>
-                    </span>
+                    <span style="font-family: 'Minecraft-Bold'">Subtotal: </span>
                     <span id="subtotal">
                         <?= "$" . $row['total'] ?>
                     </span>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#check-out"
-                        onclick="checkOut(<?= $row['id'] ?>)">Check out</button>
-                </div>
-
-                <!-- Modal -->
-                <div class="modal fade " id="check-out" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5">Order success</h1>
-                            </div>
-                            <div class="modal-body">
-                                <h2>Thanks for your order!</h2>
-                                <span>
-                                    <?= "Order ID: " . $row['id'] ?>
-                                </span>
-                            </div>
-                            <div class="modal-footer">
-                                <a href="index.php" role="button" class="btn btn-primary">Continue shopping</a>
-                            </div>
-                        </div>
-                    </div>
+                    <button type="button" id="checkOut" class="btn btn-primary">Check out</button>
                 </div>
 
                 <?php

@@ -15,31 +15,29 @@
         distinctio.</p>
     <br>
 
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Launch demo modal
-    </button>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#check-out">
+  Launch static backdrop modal
+</button>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
+<!-- Modal -->
+<div class="modal fade" id="check-out" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">Order success</h1>
+      </div>
+      <div class="modal-body">
+        <h2>Thanks for your order!</h2>
+        <span>Order ID: 123</span>
+      </div>
+      <div class="modal-footer">
+        <a href="index.php" role="button" class="btn btn-primary">Continue shopping</a>
+      </div>
     </div>
+  </div>
+</div>
     
-    <script> alert('Username/phone number is taken');</script>
 
     <!-- footer -->
     <?php include("footer.php"); ?>

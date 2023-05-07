@@ -17,4 +17,4 @@
 <link rel="stylesheet" href="css/header.css">
 
 <!-- favicon -->
-<link rel="shortcut icon" href="img/Icon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="img/logo.png" type="image/x-icon">

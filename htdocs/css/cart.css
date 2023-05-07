@@ -1,4 +1,4 @@
-.box {
+.cart-box {
     margin-left: 5%;
     margin-right: 5%;
     border: 1px solid black;
@@ -10,4 +10,12 @@ input[type=number] {
     width: 60px;
     font-size: 0.8em;
     padding: 5px;
-  }
+}
+
+.buttonUpdate {
+    display: none;
+}
+
+body {
+    /* background-color: rebeccapurple; */
+}
